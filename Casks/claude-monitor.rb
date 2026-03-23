@@ -9,7 +9,11 @@ cask "claude-monitor" do
 
   depends_on macos: ">= :ventura"
 
-  app "ClaudeMonitor.app", no_quarantine: true
+  app "ClaudeMonitor.app"
+
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-d", "com.apple.quarantine", "#{appdir}/ClaudeMonitor.app"]
+  end
 
   zap trash: [
     "~/Library/Preferences/com.lvolland.claude-monitor.plist",
