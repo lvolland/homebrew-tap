@@ -9,7 +9,7 @@ cask "claude-monitor" do
 
   depends_on macos: ">= :ventura"
 
-  app "ClaudeMonitor.app"
+  app "ClaudeMonitor.app", no_quarantine: true
 
   zap trash: [
     "~/Library/Preferences/com.lvolland.claude-monitor.plist",
