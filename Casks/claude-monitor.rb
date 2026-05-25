@@ -1,6 +1,6 @@
 cask "claude-monitor" do
-  version "1.8"
-  sha256 "736c742696bf7f31397238910836f9f4b783396175ffa439eb9413204a8eb568"
+  version "1.9"
+  sha256 "ecb47d3a1b6e3d8e07665b7600af8afbbdd06e9c29e6ad0bbd0c7048c681a90b"
 
   url "https://github.com/lvolland/claude-monitor/releases/download/v#{version}/ClaudeMonitor-v#{version}-macOS.zip"
   name "Claude Monitor"
